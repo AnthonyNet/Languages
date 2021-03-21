@@ -1,0 +1,114 @@
+@import "buttons";
+@import "variables";
+
+@import "header";
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.h1_words{
+    width: 100%;
+    text-align: center;
+    
+    
+}
+
+.choose_words_section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+font-size: 150%;
+
+
+}
+
+.choose_words_section li{
+    
+    padding: 2rem;
+    border-radius: 10px;
+    
+}
+
+.choose_words_section li a{
+    text-decoration: none;
+    color: black;
+    font-size: 150%;
+    padding: 2rem;
+
+    transition: 2s all ease;
+
+    
+}
+
+.choose_words_section li a:hover{
+    background-color: rgb(97, 105, 255);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.words-section{
+   margin: 0 auto;
+   width: 80%;
+   
+    background-color: rgb(238, 246, 255);
+}
+
+.cover_25_words{
+    display: flex;
+    flex: 1;
+   
+    
+  
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.words_cover{
+    
+    margin: 1rem;
+    width: 17%;
+   // height: 12vh;
+   // border: 1px solid red;
+}
+.cover_25_words dt,
+.cover_25_words dd{
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 140%;
+    text-align: center;
+}
+
+
+.cover_25_words dt{
+    cursor: help;
+    font-weight: 400;
+    background-color: rgb(55, 55, 62);
+}
+
+.cover_25_words dt a{
+    cursor: help;
+}
+
+.cover_25_words dd{
+    /*
+    overflow: hidden;
+  display: none;
+  */
+    background-color: rgb(182, 133, 228);
+}
