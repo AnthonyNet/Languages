@@ -33,7 +33,7 @@ html{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-font-size: 150%;
+    font-size: 150%;
 
 
 }
@@ -62,6 +62,12 @@ font-size: 150%;
     border-radius: 10px;
 }
 
+.selected a{
+    background-color: rgb(97, 105, 255);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
 .words-section{
    margin: 0 auto;
    width: 80%;
@@ -71,7 +77,7 @@ font-size: 150%;
 
 .cover_25_words{
     display: flex;
-    flex: 1;
+    flex: 100%;
    
     
   
@@ -111,4 +117,44 @@ font-size: 150%;
   display: none;
   */
     background-color: rgb(182, 133, 228);
+}
+
+.words-section{
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.cover-slovo{
+    flex: 45%;
+    
+    display: flex;
+    border: 2px solid red;
+    
+    justify-content: space-around;
+    margin:  1rem;
+    
+}
+
+.cover-slovo li:last-child{
+    flex: 4%;
+    background-color: blue;
+}
+
+.slovo{
+    
+    display: flex;
+    width: 30%;
+    height: 30px;
+    margin: 1rem;
+    
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.slovo input{
+    text-align: center;
 }

@@ -1,4 +1,5 @@
 <?php include "header.php" ?>
+</header>
 
 <body>
 
@@ -24,6 +25,7 @@
 			*/
 				$i_sort_by_25 = 1;
 				echo '<ul class="choose_words_section">';
+				echo '<li class="selected"><a href="#vsecko">All</a></li>';
 				for($i = 1; $i <= count($sort_by_25); $i++){
 					//echo '<li><a href="anglictina_slova">' . $i . '</a></li>';
 				echo '<li><a href=' . "#anglictina_slova{$i}" . '>' . $i . '</a></li>';
@@ -32,7 +34,7 @@
 
 
 				foreach ($sort_by_25 as $sorted){
-					echo '<div class=cover_25_words id=' . 'anglictina_slova' . $i_sort_by_25 . '>';
+					echo '<div class="cover_25_words" id=' . 'anglictina_slova' . $i_sort_by_25 . '>';
 					echo '<h1 class="h1_words"> Words nr.' . $i_sort_by_25 . '</h1>';
 					$i_sort_by_25++;
 					foreach ($sorted as $eng => $cze) {

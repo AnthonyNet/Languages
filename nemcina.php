@@ -1,8 +1,9 @@
 <?php include "header.php" ?>
+</header>
 
 <body>
 
-<section id="cover">
+<section class=" container">
 		
 
 	
@@ -24,6 +25,7 @@
 			*/
 				$i_sort_by_25 = 1;
 				echo '<ul class="choose_words_section">';
+				echo '<li class="selected"><a href="#">All</a></li>';
 				for($i = 1; $i <= count($sort_by_25); $i++){
 					//echo '<li><a href="anglictina_slova">' . $i . '</a></li>';
 				echo '<li><a href=' . "#anglictina_slova{$i}" . '>' . $i . '</a></li>';
