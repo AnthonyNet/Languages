@@ -14,7 +14,7 @@
 <nav class="nav">
   <ul class="nav-list">
   <li><a href="index.php">Hlavní stránka</a></li>
-    <li><a href="anglictina.php">Anglictina</a></li>
+    <li><a href="anglictina.php">Angličtina</a></li>
 	<li><a href="aj-irregular.php">AJ-Irregular verbs</a></li>
     <li><a href="nemcina.php">Němčina</a></li>
   </ul>
