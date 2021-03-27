@@ -54,6 +54,7 @@ galleries.hide();
 var selected = $('.choose_words_section').find('.selected');
 
 
+
    // vytvorim funkciu show gallery, ktora akceptuje selectnuty prvok menu na zaklade ktoreho vyberieme a zobrazime galeriu
 	function showGallery( selected ) {
 
@@ -76,7 +77,20 @@ var selected = $('.choose_words_section').find('.selected');
 
   showGallery(selected);
 
-   
+   // ak klikneme na link v menu, nastavime mu class selected a vsetky surodencom ho odoberieme
+	// aby vzdy bol selected iba jeden
+	// nasledne zobrazime aktualnu galeriu
+	$('.choose_words_section li').on('click', function(event) {
+		var fadeClass = 'fadeIn' + $(this).data('from');
+
+		$(this)
+			.data('class', fadeClass)
+			.addClass('selected')
+			.siblings().removeClass('selected');
+
+		showGallery( $(this) );
+		event.preventDefault();
+	});
 
 
 })(jQuery);
