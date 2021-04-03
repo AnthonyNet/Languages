@@ -38,14 +38,16 @@
 }
 
 :root {
+  --font-size: 62.5%;
   --color-primary: #eb2f64;
   --color-primary-light: #FF3366;
   --color-primary-dark: #BA265D;
+  --color-white: #fff;
   --color-grey-light-1: #faf9f9;
   --color-grey-light-2: #f4f2f2;
   --color-grey-light-3: #f0eeee;
   --color-grey-light-4: #ccc;
-  --color-grey-dark-1: #333;
+  --color-grey-dark-1: #37373e;
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
   --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
@@ -58,21 +60,38 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 80%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #37373e;
+  height: 6vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: var(--color-grey-dark-1);
 }
 
-.nav-list li a {
+.nav-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-list li {
   font-size: 150%;
 }
 
-@media only screen and (max-width: 350px) {
-  .words_cover {
-    width: 45%;
-  }
+.nav-list li a {
+  color: var(--color-white);
+  font-size: 150%;
+  text-decoration: none;
 }
 
 * {
@@ -90,13 +109,14 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: var(--font-size);
   font-family: 'Rubik', sans-serif;
 }
 
 .h1_words {
   width: 100%;
   text-align: center;
+  font-size: 550%;
 }
 
 .choose_words_section {
@@ -105,20 +125,23 @@ html {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 150%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .choose_words_section li {
   padding: 2rem;
   border-radius: 10px;
+  list-style: none;
 }
 
 .choose_words_section li a {
   text-decoration: none;
-  color: black;
+  color: var(--color-grey-dark-1);
   font-size: 150%;
   padding: 2rem;
   -webkit-transition: 2s all ease;
@@ -169,10 +192,16 @@ html {
   text-align: center;
 }
 
+.cover_25_words dt a,
+.cover_25_words dd a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
 .cover_25_words dt {
   cursor: help;
   font-weight: 400;
-  background-color: #37373e;
+  background-color: var(--color-grey-dark-1);
 }
 
 .cover_25_words dt a {
@@ -184,7 +213,7 @@ html {
     overflow: hidden;
   display: none;
   */
-  background-color: #b685e4;
+  background-color: var(--color-primary-dark);
 }
 
 .words-section {
@@ -213,13 +242,6 @@ html {
   margin: 1rem;
 }
 
-.cover-slovo li:last-child {
-  -webkit-box-flex: 4%;
-      -ms-flex: 4%;
-          flex: 4%;
-  background-color: blue;
-}
-
 .slovo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -237,4 +259,48 @@ html {
 
 .slovo input {
   text-align: center;
+}
+
+@media only screen and (max-width: 1050px) {
+  .choose_words_section li {
+    padding: 1rem;
+    font-size: 80%;
+  }
+  .words_cover {
+    width: 23%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-list li {
+    font-size: 100%;
+  }
+  .choose_words_section li {
+    font-size: 80%;
+  }
+  .words_cover {
+    width: 43%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-list li {
+    font-size: 80%;
+  }
+  .selected a {
+    padding: 0.5rem;
+  }
+  .choose_words_section li {
+    font-size: 60%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .choose_words_section li {
+    font-size: 50%;
+    padding: 0.5rem;
+  }
+  .words_cover {
+    width: 90%;
+  }
 }

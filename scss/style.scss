@@ -19,22 +19,23 @@
 
 html{
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: var(--font-size);
     font-family: 'Rubik', sans-serif;
 }
 .h1_words{
     width: 100%;
     text-align: center;
-    
+    font-size: 550%;
     
 }
 
 .choose_words_section{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     font-size: 150%;
-
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 
 }
 
@@ -42,15 +43,15 @@ html{
     
     padding: 2rem;
     border-radius: 10px;
-    
+    list-style: none;
 }
 
 .choose_words_section li a{
     text-decoration: none;
-    color: black;
+    color: var(--color-grey-dark-1);
     font-size: 150%;
     padding: 2rem;
-
+    
     transition: 2s all ease;
 
     
@@ -63,7 +64,7 @@ html{
 }
 
 .selected a{
-    background-color: rgb(97, 105, 255);
+   background-color: rgb(97, 105, 255);
     padding: 2rem;
     border-radius: 10px;
 }
@@ -80,7 +81,7 @@ html{
     flex: 100%;
    
     
-  
+    
     flex-wrap: wrap;
     justify-content: space-around;
     
@@ -100,11 +101,17 @@ html{
     text-align: center;
 }
 
+.cover_25_words dt a,
+.cover_25_words dd a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
 
 .cover_25_words dt{
     cursor: help;
     font-weight: 400;
-    background-color: rgb(55, 55, 62);
+    background-color: var(--color-grey-dark-1)
 }
 
 .cover_25_words dt a{
@@ -116,7 +123,7 @@ html{
     overflow: hidden;
   display: none;
   */
-    background-color: rgb(182, 133, 228);
+    background-color: var(--color-primary-dark);
 }
 
 .words-section{
@@ -138,10 +145,7 @@ html{
     
 }
 
-.cover-slovo li:last-child{
-    flex: 4%;
-    background-color: blue;
-}
+
 
 .slovo{
     
@@ -158,3 +162,61 @@ html{
 .slovo input{
     text-align: center;
 }
+
+@media only screen and (max-width: 1050px) {
+    .choose_words_section li{
+        padding: 1rem;
+        font-size: 80%;
+    }
+    
+    .words_cover{
+        width: 23%; 
+    }
+ }
+
+ @media only screen and (max-width: 800px) {
+    .nav-list li{
+        font-size: 100%;
+        
+    }
+    
+    .choose_words_section li{
+        font-size: 80%;
+    }
+   
+    .words_cover{
+        width: 43%;
+    }
+ }
+ @media only screen and (max-width: 600px) {
+    .nav-list li{
+        font-size: 80%;
+        
+    }
+
+    .selected a{
+        padding: 0.5rem;
+    }
+    
+    .choose_words_section li{
+        font-size: 60%;
+    }
+   
+   
+ }
+ 
+
+
+@media only screen and (max-width: 350px) {
+    .choose_words_section li{
+        font-size: 50%;
+        padding: 0.5rem;
+    }
+
+    .words_cover{
+        width: 90%;
+    }
+ }
+
+
+ 

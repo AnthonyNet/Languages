@@ -25,14 +25,15 @@
 			*/
 				$i_sort_by_25 = 1;
 				echo '<ul class="choose_words_section">';
-				echo '<li class="selected"><a href="#">All</a></li>';
+				echo '<li id="vsecko" class="selected"><a href="#">All</a></li>';
+				echo '<li id ="random"><a href="#">Náhodně</a></li>';
 				for($i = 1; $i <= count($sort_by_25); $i++){
 					//echo '<li><a href="anglictina_slova">' . $i . '</a></li>';
 				echo '<li><a href=' . "#anglictina_slova{$i}" . '>' . $i . '</a></li>';
 				}
 				echo '</ul>';
 
-
+				echo '<div id="container">';
 				foreach ($sort_by_25 as $sorted){
 					echo '<div class=cover_25_words id=' . 'anglictina_slova' . $i_sort_by_25 . '>';
 					echo '<h1 class="h1_words"> Words nr.' . $i_sort_by_25 . '</h1>';
@@ -45,7 +46,7 @@
 					}
 					echo '</div>';
 				}
-
+				echo '</div>';
 
 			?>
 			

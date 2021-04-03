@@ -8,12 +8,12 @@
 
 <meta charset="utf-8">
 <title>Brainzone</title>
-<!--
+
 <meta content="width=device-width, initial-scale=1" name="viewport" />
--->
+
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
 
 <link rel="stylesheet" href="../css/style.css">
 

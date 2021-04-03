@@ -1,12 +1,32 @@
 .nav{
   margin: 0 auto;
   display: flex;
+  
+  align-items: center;
   width: 80%;
-  justify-content: center;
-
-  background-color: #37373e;;
+  height: 6vh;
+  justify-content: space-between;
+  background-color: var(--color-grey-dark-1)
 }
 
+.nav-list{
+  list-style: none;
+  display: flex;
+ width: 100%;
+ justify-content: space-around;
+ align-items: center;
+  
+  
+}
+.nav-list li{
+  
+ font-size: 150%;
+
+ 
+}
 .nav-list li a{
+  
+  color: var(--color-white);
   font-size: 150%;
+  text-decoration: none;
 }
