@@ -1,4 +1,4 @@
-<?php include "header.php" ?>
+<?php include "../partials/header.php" ?>
 </header>
 
 <body>
@@ -14,7 +14,7 @@
 	
 <section class="words-section">
 			
-			<?php include "data/data_anglictina.php";
+			<?php include "../data/data_anglictina.php";
 			
 
 				$sort_by_25 = array_chunk($seznam, 25, true);
@@ -53,4 +53,4 @@
 			
 		</section>
             </body>
-        <?php include "footer.php"?>
+        <?php include "../partials/footer.php"?>

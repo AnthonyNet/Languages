@@ -1,4 +1,4 @@
-<?php include "header.php" ?>
+<?php include "../partials/header.php" ?>
 </header>
 
 <body>
@@ -43,4 +43,4 @@
 </section>
 
             </body>
-        <?php include "footer.php"?>
+        <?php include "../partials/footer.php"?>
