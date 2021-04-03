@@ -3,7 +3,7 @@
 
 @import "header";
 
-
+@import "queries";
 
 *{
     margin: 0;
@@ -20,8 +20,8 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+    font-family: 'Rubik', sans-serif;
 }
-
 .h1_words{
     width: 100%;
     text-align: center;
