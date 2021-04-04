@@ -1,11 +1,22 @@
 
 (function($) {
 
-	// close the toggle menu if user clicks outside of the menu
-	
-	
-	  
-	
+	$(document).ready(function() {
+        $('.choose_words_section li').hide();
+        
+    });
+
+	$(document).ready(function() {
+        $('.menu-words-btn h3').click(function() {
+			$('.choose_words_section li').fadeIn(2000);
+        });
+    });
+
+	$(document).ready(function() {
+        $('.choose_words_section li').click(function() {
+			$('.choose_words_section li').fadeOut(2000);
+        });
+    });
 	
 		
 			var list = $(".words-section");
@@ -16,7 +27,7 @@
 			// zobrazime dd po kliknuti na term
 			list.find("dt").on("click", function (event) {
 				$(this).next().slideToggle().siblings("dd").slideUp();
-		
+				
 				event.preventDefault();
 			});
 	
@@ -121,14 +132,7 @@
 					
 				})
 	
-	//
-	//IRREGULAR VERBS AJ
-	//
 	
-	
-	let b = document.getElementsByClassName('slovo')
-	
-	console.log("ahoj")
 	
 	
 	})(jQuery);

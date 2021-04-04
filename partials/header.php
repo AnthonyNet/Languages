@@ -15,12 +15,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="css/style.css">
 
 <header>
 
 <nav class="nav">
   <ul class="nav-list">
+	  
 		<?php 
 			$pages = glob('*.php');
 			

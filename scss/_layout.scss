@@ -1,0 +1,146 @@
+
+.menu-words-btn{
+    display: flex;
+    flex: 1;
+    justify-content: left;
+    align-items: center;
+    max-height: 60px;
+    margin-top: 10px;
+    
+    
+}
+
+
+.choose_words_section{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 150%;
+  
+    margin-bottom: 5rem;
+
+}
+
+.choose_words_section li{
+    
+    padding: 2rem;
+    border-radius: 10px;
+    list-style: none;
+}
+
+.choose_words_section li a{
+    text-decoration: none;
+    color: var(--color-blue-1);
+    font-size: 150%;
+    padding: 2rem;
+    
+    transition: 2s all ease;
+
+    
+}
+
+.choose_words_section li a:hover{
+    background-color: rgb(97, 105, 255);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.selected a{
+   background-color: var( --color-primary-light);//rgb(97, 105, 255);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.words-section{
+   margin: 0 auto;
+   width: 80%;
+   min-height: 94vh;
+   
+    background-color: var( --color-grey-light-1);
+    display: flex;
+    flex: 2;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cover_25_words{
+    display: flex;
+    flex: 100%;
+   
+    
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.words_cover{
+    
+    margin: 1rem;
+    width: 17%;
+   // height: 12vh;
+   // border: 1px solid red;
+}
+.cover_25_words dt,
+.cover_25_words dd{
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 140%;
+    text-align: center;
+}
+
+.cover_25_words dt a,
+.cover_25_words dd a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+
+.cover_25_words dt{
+    cursor: help;
+    font-weight: 400;
+    background-color: var( --color-blue-1)
+}
+
+.cover_25_words dt a{
+    cursor: help;
+}
+
+.cover_25_words dd{
+    /*
+    overflow: hidden;
+  display: none;
+  */
+    background-color: var(--color-primary-dark);
+}
+
+
+
+.cover-slovo{
+    flex: 45%;
+    
+    display: flex;
+    border: 2px solid red;
+    
+    justify-content: space-around;
+    margin:  1rem;
+    
+}
+
+
+/*
+.slovo{
+    
+    display: flex;
+    width: 30%;
+    height: 30px;
+    margin: 1rem;
+    
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.slovo input{
+    text-align: center;
+}*/
