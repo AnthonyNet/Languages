@@ -48,7 +48,10 @@
     .selected a{
         padding: 0.5rem;
     }
-    
+    .go-top{
+        position: relative;
+        display: none;
+    }
     .choose_words_section li{
         font-size: 60%;
     }
