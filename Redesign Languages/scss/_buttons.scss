@@ -1,0 +1,51 @@
+.menu-words-btn h3{
+  background-color: var(--color-blue-1);
+  cursor: pointer;
+  border-radius: 5px;
+  
+  font-size: 200%;
+  padding: 2vh;
+  
+}
+
+
+//
+//GO TOP
+//
+.go-top {
+    position:fixed;
+    bottom: 10%;
+    right: 7%;
+    padding:20px;
+    display:none;
+    cursor: pointer;
+      -webkit-font-smoothing: antialiased;
+  }
+  .go-top:after {
+    font-family: FontAwesome;
+    content:"\21EA";
+      background-color: #E5E8F0;
+      padding: 10px 15px;
+    color: #6a6e7c;
+    position: absolute; 
+    bottom:10px;
+    font-size: 28px;
+  }
+  
+  
+  
+  .go-top-text {
+      position: absolute;
+      width: 60px;
+      text-align: center;
+      font-family: 'Questrial';
+      line-height: 1.5;
+      letter-spacing: 3px;
+      font-size: 12px;
+      margin: 20px 0 0 -4px;
+  }
+  
+  .go-top:hover {
+      transition: all .4s linear;
+      transform: scale(1.1);
+  }

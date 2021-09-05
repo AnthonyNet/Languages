@@ -1,0 +1,76 @@
+@import "general";
+@import "layout";
+@import "variables";
+@import "buttons";
+
+@import "fonts";
+
+@import "header";
+
+
+
+
+@media only screen and (max-width: 1050px) {
+    
+    .nav{width:100%;}
+    .words-section{width:100%;}
+    .choose_words_section li a{
+        padding: 1.5rem;
+        font-size: 120%;
+    }
+    
+    .words_cover{
+        width: 23%; 
+    }
+ }
+
+ @media only screen and (max-width: 800px) {
+    
+    .nav-list li{
+        font-size: 100%;
+        
+    }
+    .selected a{
+        padding: 0.5rem;
+    }
+    
+   
+    .words_cover{
+        width: 43%;
+    }
+ }
+ @media only screen and (max-width: 600px) {
+    .nav-list li{
+        font-size: 80%;
+        
+    }
+
+    .selected a{
+        padding: 0.5rem;
+    }
+    .go-top{
+        position: relative;
+        display: none;
+    }
+    .choose_words_section li{
+        font-size: 60%;
+    }
+   
+   
+ }
+ 
+
+
+@media only screen and (max-width: 350px) {
+    .choose_words_section li{
+        font-size: 50%;
+        padding: 0.5rem;
+    }
+
+    .words_cover{
+        width: 90%;
+    }
+ }
+
+
+ 
