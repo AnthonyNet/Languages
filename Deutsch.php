@@ -6,7 +6,7 @@
 <section class=" container">
 		
 
-	<h1></h1>
+	
 
 
 
